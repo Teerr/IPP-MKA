@@ -162,7 +162,7 @@ echo
 
 #run_test   <vyst. soub>	<e> 	<argumenty programu> 						<popis spusteneho testu>
 #--------------------------------------------------------------------------------------------------------------------------- 					
-run_test 	""		62 	""									"Zadne parametry - exit 62"
+run_test 	""		60 	""									"Prázdný vstup - exit 60"
 run_test 	""		1 	"--bla"									"Neexistujici parametr - exit 1"
 run_test	"" 		1 	"--input" 								"Parametr bez hodnoty - exit 1"
 run_test 	""		1 	"--input=${LOCAL_IN_PATH}test01.in --input=${LOCAL_IN_PATH}test01.in" 	"Duplicitni parametr - exit 1"
@@ -196,6 +196,10 @@ run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test15a.in -m"			"Chybne apostrofy 
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test14a.in -m"			"Vice znaku v symbolu - exit 60"
 run_test  	"" 		61 	"--input=${LOCAL_IN_PATH}test07.in -m"			"Neexistujici stav - exit 61"
 run_test  	"" 		61 	"--input=${LOCAL_IN_PATH}test01c.in"			"Neexistujici symbol - exit 61"
+run_test  	"" 		62 	"--input=${LOCAL_IN_PATH}test16.in"			"Nedeterministicky automat - exit 62"
+run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01e.in"			"Chybne nazvy stavu (stav zacina cislem) - exit 60"
+run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01f.in"			"Chybne nazvy stavu (stav zacina _) - exit 60"
+run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01g.in"			"Chybne nazvy stavu (stav konci _) - exit 60"
 
 echo
 echo -e "${green}Testy minimalizace${NC}"
