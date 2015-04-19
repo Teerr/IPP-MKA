@@ -191,7 +191,6 @@ echo
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01a.in -m"			"Epsilon ve vstupni abecede - exit 60"
 # 	Pokud je epsilon prechod, nejedna se o deterministicky automat
 run_test  	"" 		62 	"--input=${LOCAL_IN_PATH}test01b.in -m"			"Epsilon prechod - exit 62"
-# 	Chybne apostrofy
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test15a.in -m"			"Chybne apostrofy - exit 60"
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test14a.in -m"			"Vice znaku v symbolu - exit 60"
 run_test  	"" 		61 	"--input=${LOCAL_IN_PATH}test07.in -m"			"Neexistujici stav - exit 61"
@@ -200,6 +199,9 @@ run_test  	"" 		62 	"--input=${LOCAL_IN_PATH}test16.in"			"Nedeterministicky aut
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01e.in"			"Chybne nazvy stavu (stav zacina cislem) - exit 60"
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01f.in"			"Chybne nazvy stavu (stav zacina _) - exit 60"
 run_test  	"" 		60 	"--input=${LOCAL_IN_PATH}test01g.in"			"Chybne nazvy stavu (stav konci _) - exit 60"
+run_test  	"" 		61 	"--input=${LOCAL_IN_PATH}test01h.in"			"Prazdna vstupni abeceda - exit 61"
+run_test  	"" 		61 	"--input=${LOCAL_IN_PATH}test01i.in"			"Prazdna mnozina stavu - exit 61"
+run_test  	"" 		62 	"--input=${LOCAL_IN_PATH}test01j.in"			"Zadne koncove stavy - exit 62"
 
 echo
 echo -e "${green}Testy minimalizace${NC}"
