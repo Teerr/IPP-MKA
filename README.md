@@ -2,7 +2,7 @@
 IPP: Projekt - úloha MKA (Minimalizace konečného automatu)
 
 Toto je původně script pro testování úlohy SYN, který vytvořil Granát Štěpán. 
-Provedl jsem pouze dropné úpravy pro testování úlohy MKA a přidal referenční testy od vyučujících (pro přehlednost) 
+Provedl jsem pouze drobné úpravy pro testování úlohy MKA a přidal referenční testy od vyučujících (pro přehlednost) 
 a nějaké další testy co mě napadly.
 Testy na rozšíření nejsou zahrnuty.
 
