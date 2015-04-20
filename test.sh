@@ -208,6 +208,8 @@ echo -e "${green}Testy minimalizace${NC}"
 echo
 
 run_test  "test11.out" 	0 	"--input=${LOCAL_IN_PATH}test11.in -m"			"DSKA 1"
+$INTERPRETER $TASK.$EXTENSION --input=${LOCAL_IN_PATH}test11.in -m 2> ${LOCAL_OUT_PATH}test11.err 1> "${LOCAL_OUT_PATH}test11.out"
+run_test  "test11.out" 	0 	"--input=${LOCAL_OUT_PATH}test11.out -m"		"Znovunacteni DSKA 1 a minimalizace"
 run_test  "test12.out" 	0 	"--input=${LOCAL_IN_PATH}test12.in -m"			"DSKA 2"
 run_test  "test13.out" 	0 	"--input=${LOCAL_IN_PATH}test13.in -m -i"		"DSKA 3"
 run_test  "test14.out" 	0 	"--input=${LOCAL_IN_PATH}test14.in -m"			"Symboly jsou znaky \t a \n"
